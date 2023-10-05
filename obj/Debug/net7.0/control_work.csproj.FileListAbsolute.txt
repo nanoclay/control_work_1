@@ -1,0 +1,14 @@
+D:\control_work\obj\Debug\net7.0\control_work.GeneratedMSBuildEditorConfig.editorconfig
+D:\control_work\obj\Debug\net7.0\control_work.AssemblyInfoInputs.cache
+D:\control_work\obj\Debug\net7.0\control_work.AssemblyInfo.cs
+D:\control_work\obj\Debug\net7.0\control_work.csproj.CoreCompileInputs.cache
+D:\control_work\bin\Debug\net7.0\control_work.exe
+D:\control_work\bin\Debug\net7.0\control_work.deps.json
+D:\control_work\bin\Debug\net7.0\control_work.runtimeconfig.json
+D:\control_work\bin\Debug\net7.0\control_work.dll
+D:\control_work\bin\Debug\net7.0\control_work.pdb
+D:\control_work\obj\Debug\net7.0\control_work.dll
+D:\control_work\obj\Debug\net7.0\refint\control_work.dll
+D:\control_work\obj\Debug\net7.0\control_work.pdb
+D:\control_work\obj\Debug\net7.0\control_work.genruntimeconfig.cache
+D:\control_work\obj\Debug\net7.0\ref\control_work.dll
