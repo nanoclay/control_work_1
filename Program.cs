@@ -1,19 +1,19 @@
-﻿void RandomArrey(int[] Arrey, int min, int max)
+﻿void RandomArrey(string[] Arrey, int min, int max)
 {
     for(int i = 0; i < Arrey.Length; i++)
     {
-        Arrey[i] = new Random().Next(min, max + 1);
+        Arrey[i] = Convert.ToString(new Random().Next(min, max + 1));
     }
 }
-void GenerateArrey(int[] Arrey)
+void GenerateArrey(string[] Arrey)
 {
     for(int i = 0; i < Arrey.Length; i++)
     {
         Console.Write($"Введите {i+1} элемент: ");
-        Arrey[i] = Convert.ToInt32(Console.ReadLine());
+        Arrey[i] = Console.ReadLine();
     }
 }
-void PrintArrey(int[] Arrey)
+void PrintArrey(string[] Arrey)
 {
     for(int i = 0; i < Arrey.Length; i++)
         Console.WriteLine(Arrey[i]);
@@ -24,7 +24,7 @@ int length = Convert.ToInt32(Console.ReadLine());
 Console.Write($"Введите {1}, чтобы задачть значения вручную или {2}, чтобы сгенерировать автоматически: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-int[] Mas = new int[length];
+string[] Mas = new string[length];
 if (n == 2)
 {
     Console.Write("Введите минимальное значение: ");
