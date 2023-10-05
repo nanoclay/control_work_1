@@ -16,7 +16,34 @@ void GenerateArrey(string[] Arrey)
 void PrintArrey(string[] Arrey)
 {
     for(int i = 0; i < Arrey.Length; i++)
-        Console.WriteLine(Arrey[i]);
+        Console.Write(Arrey[i] + " ");
+}
+int LengthNewArrey(string[] Arrey)
+{
+    int result = 0;
+
+    for (int i = 0; i < Arrey.Length; i++)
+    {
+        int length = Arrey[i].Length;
+        if (length < 4)
+           result++;
+    }
+    return result;
+}
+string[] ArreyNew(int numLength, string[] ArreyOld)
+{
+    string[] ArreyNew = new string[numLength];
+    int j = 0;
+    for (int i = 0; i < ArreyOld.Length; i++)
+    {
+        int length = ArreyOld[i].Length;
+        if (length < 4)
+        {
+           ArreyNew[j] = ArreyOld[i];
+           j++;
+        }   
+    }
+    return ArreyNew;
 }
 
 Console.Write("Введите длину масива: ");
@@ -37,4 +64,10 @@ else
 {
     GenerateArrey(Mas);
 }
+Console.Write("Полученный массив: ");
 PrintArrey(Mas);
+Console.WriteLine();
+int lenghtNewMas = LengthNewArrey(Mas);
+string[] NewMas =  ArreyNew(lenghtNewMas, Mas);
+Console.Write("Новый массив: ");
+PrintArrey(NewMas);
