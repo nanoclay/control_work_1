@@ -54,12 +54,12 @@ string[] ArreyNew(int numLength, string[] ArreyOld)
 bool flag = true;
 int n = 0;
 
-Console.Write("Введите длину масива: ");
+Console.Write("Введите длину масcива: ");
 int length = Convert.ToInt32(Console.ReadLine());
 
 while (flag)
 {
-    Console.Write($"Введите цифру {1}, чтобы задачть значения вручную или цифру {2}, чтобы сгенерировать автоматически: ");
+    Console.Write($"Введите цифру {1}, чтобы задать значения вручную или цифру {2}, чтобы сгенерировать автоматически: ");
     string choiceString = Console.ReadLine();
     if (choiceString == "1" || choiceString == "2")
     {
