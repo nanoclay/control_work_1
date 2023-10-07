@@ -15,8 +15,13 @@ void GenerateArrey(string[] Arrey)
 }
 void PrintArrey(string[] Arrey)
 {
-    for(int i = 0; i < Arrey.Length; i++)
-        Console.Write(Arrey[i] + " ");
+    Console.Write("[");
+    for(int i = 0; i < Arrey.Length; i++) 
+    {
+        Console.Write($"\"{Arrey[i]}\"");
+        if(i < Arrey.Length - 1) Console.Write(",");
+    }
+    Console.Write("]");
 }
 int LengthNewArrey(string[] Arrey)
 {
@@ -46,10 +51,24 @@ string[] ArreyNew(int numLength, string[] ArreyOld)
     return ArreyNew;
 }
 
+bool flag = true;
+int n = 0;
+
 Console.Write("Введите длину масива: ");
 int length = Convert.ToInt32(Console.ReadLine());
-Console.Write($"Введите {1}, чтобы задачть значения вручную или {2}, чтобы сгенерировать автоматически: ");
-int n = Convert.ToInt32(Console.ReadLine());
+
+while (flag)
+{
+    Console.Write($"Введите цифру {1}, чтобы задачть значения вручную или цифру {2}, чтобы сгенерировать автоматически: ");
+    string choiceString = Console.ReadLine();
+    if (choiceString == "1" || choiceString == "2")
+    {
+        flag = false;
+        n = Convert.ToInt32(choiceString);
+    }
+    else Console.WriteLine("Некорректный ввод");
+    
+}
 
 string[] Mas = new string[length];
 if (n == 2)
